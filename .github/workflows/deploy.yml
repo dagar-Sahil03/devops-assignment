@@ -46,6 +46,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /var/www/html/syook-devops-assignment/task-1
+            cd /var/www/html/syook-devops-assignment/task-2
+            docker compose down
             docker compose pull
             docker compose up -d
